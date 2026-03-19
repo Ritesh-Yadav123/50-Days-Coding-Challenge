@@ -4,8 +4,8 @@ reverse=document.getElementById("reverse");
 Palindrome=document.getElementById("Palindrome");
 resultDiv=document.getElementById("result");
 factorial=document.getElementById("Factorial");
-prime=document.getElementById("prime");
-fibonacci=document.getElementById("fibonacci");
+prime=document.getElementById("Prime");
+fibonacciBtn=document.getElementById("Fibonacci");
 evenOddbtn=document.getElementById("Even/Odd");
 
 result=document.querySelector("#result");
@@ -82,3 +82,43 @@ function palindromeCheck(){
         result.innerHTML="NOT palindrome";
     }
 }
+
+prime.addEventListener('click',checkPrime);
+function checkPrime(){
+    let num=numberInput.value;
+    isPrime=true;
+    if(num<0 || num==1){
+        isPrime=false;
+    }
+    else{
+        for(let i=2; i<=num/2; i++){
+            if(num%i==0){
+                isPrime=false;
+                break;
+            }
+        }
+    }
+    if(isPrime){
+        result.innerHTML="Primer Number ✅";
+    }
+    else{
+        result.innerHTML="Not Prime Number ❌";
+    }
+}
+
+
+fibonacciBtn.addEventListener("click",fibonacci);
+
+function fibonacci(){
+    let n=numberInput.value;
+    let a=0; 
+    let b=1;
+    let series="";
+    for(let i=0; i<n; i++){
+        series+=a+",";
+        let next=a+b;
+        a=b; 
+        b=next;
+    }
+    result.innerHTML=series.slice(0, -1);
+} 

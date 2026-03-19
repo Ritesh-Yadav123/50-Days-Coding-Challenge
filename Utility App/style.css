@@ -15,6 +15,7 @@ body{
     margin: 50px auto;
     background-color: hsl(298, 78%, 70%);
     padding: 20px;
+    overflow: auto;
 }
 
 #heading{
@@ -35,13 +36,15 @@ body{
 }
 button {
     height: 40px;
-    width: 100px;
+    /* width: 100px; */
     background-color: #1616ed;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 8px;
+    width: 100%;        
+    max-width: 120px; 
 }
 button:hover {
     transform:scale(1.1)
@@ -57,4 +60,37 @@ button:hover {
     border-radius: 5px;
     font-size: 1.2em;
     height: 50px;
+}
+
+#buttons{
+    margin: 10px auto;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+
+    #numberInput{
+        width: 90%;
+    }
+
+    #result{
+        width: 90%;
+    }
+
+    button{
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px){
+    #heading{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    button{
+        width: 100%;
+    }
 }
