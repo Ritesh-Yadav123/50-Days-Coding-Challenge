@@ -1,0 +1,6 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(120,45%,34%);
+}

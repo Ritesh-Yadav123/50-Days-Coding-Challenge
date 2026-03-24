@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #18090998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+li{
+    list-style: none;
+    text-decoration-line: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+
+}
+nav ul li a, #appIconAndSearch a{
+    margin: 0 10px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+#appIconAndSearch {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#searchBox {
+    padding: 5px;
+    font-size: 16px;
+    height: 20px;
+    border: 2px solid #26eb11;
+    border-radius: 4px;
+    width: 200px;
+}
