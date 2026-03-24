@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 id="heading"> LEARNING PROMIES </h1>
+    <script>
+        // function getName(n,call){
+        //     console.log(n);
+        //     setTimeout(()=>{
+        //         if(call){
+        //             call();
+        //         }
+        //     },2000)
+        // }
+        // getName("Ritesh",()=>{
+        //     getName("Vikas",()=>{
+        //         getName("RitVik")
+        //     });
+        // })
+
+        // function hello(){
+
+            // let myPromise=new Promise((res,rej)=>{
+            //     res("It has been solved");
+            // })
+    
+            // myPromise.then((e)=>{
+            //     console.log(e);
+            //     console.log("I am successful");
+            // })
+            // myPromise.catch(()=>{
+            //     console.log("I am rejected");
+            // })
+        // }
+        // hello();
+
+
+        // function getName(n,call){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             res("Data resolved")
+        //             console.log(n);
+        //             if(call){
+        //                 call();
+        //             }
+        //         },2000);
+        //     })
+        // }
+        // getName("Ritesh")
+
+
+        // Promises chainig
+
+        // function asyncFunc(){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             console.log("getting Name1 ");
+        //             res("success");
+        //         },2000)
+        //     })
+        // }
+
+        // function asyncFunc2(){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             console.log("getting Name2 ");
+        //             res("success");
+        //         },2000)
+        //     })
+        // }
+        // let p1=asyncFunc();
+        // p1.then((r)=>{
+        //     console.log(r);
+        //     console.log("I have got the data")
+        //     let p2=asyncFunc();
+        //     p2.then((r)=>{
+        //     console.log(r);
+        //     console.log("I have got the data")
+
+        //     })
+        // })
+
+
+
+
+        // function getName(name){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             console.log(name);
+        //             res("good to go")
+        //         },2000)
+        //     })
+        // }
+        // console.log("Getting Name....")
+        // getName("Ritesh").then(()=>{
+        //     getName("Vikas").then(()=>{
+        //         getName("RitVik");
+        //     })
+        // })
+
+        // NOTES: WE DON'T NEED TO GIVE if statement in callback which it handled automatically
+
+        // // NOW ASYNC AND AWAIT
+
+        // function getName(name){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             res("good to go");
+        //             console.log(name);
+        //         },2000)
+        //     })
+        // }
+
+        // async function hello(){
+        //     await getName("Ritesh");
+        //     await getName("Vikas");
+        //     await getName("RitVik");
+        }
+
+    
+
+
+    </script>
+</body>
+</html>
