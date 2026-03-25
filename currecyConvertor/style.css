@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2a0a0;
+}
+main{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 30vh auto;
+    min-height: 50vh;
+}
+#amountInput {
+    min-width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border:none
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    font-size: 1.4em;
+}
+
+#result {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: beige;
+    margin: 0 auto;
+    width: 120px;
+}
+#convertBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#convertBtn:hover{
+    transform: scale(1.1);
+}
+
+#fromCurrency .flags, #toCurrency .flags{
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+    height: 20px;
+
+}
