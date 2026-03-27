@@ -1,51 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div id="appIconAndSearch">
-                <a href="#">App ICON TO be updated</a>
-                <input type="search" id="searchBox" placeholder="Search products...">
-            </div>
-            <ul>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Genz</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Bag</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div id="appIconAndSearch">
+          <a href="#">App ICON TO be updated</a>
+          <input
+            type="search"
+            id="searchBox"
+            placeholder="Search products..."
+          />
+        </div>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Genz</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Bag</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="heroSection">
-            <h1>Welcome to Our E-commerce Store</h1>
-            <p>Discover the best products at unbeatable prices!</p>
-            <a href="#" class="btn">Shop Now</a>
-        </section>
+      <section id="heroSection">
+        <h1>Ritesh, Welcome to Our E-commerce Store</h1>
+        <p>Discover the best products at unbeatable prices!</p>
+        <a href="#" class="btn">Shop Now</a>
+        <span id="arrow">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </span>
+      </section>
     </main>
     <article>
-        <h2>Featured Products</h2>
-        <p>Check out our latest collection!</p>
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h3>Product Name 1</h3>
-            <p>29.99</p>
-            <discount>19.99</discount>
-            <discount-percentage>33% OFF</discount-percentage>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
+      <h2 id="featured-products">Featured Products</h2>
+      <p id="product-heading">Check out our latest collection!</p>
+      <div id="product-grid">
+      <div class="product-card">
+        <img
+          src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+          alt="product"
+        />
+
+        <h2>Fjallraven - Foldsack No. 1 Backpack</h2>
+
+        <p class="price">$109.95</p>
+
+        <p class="desc">
+          Your perfect pack for everyday use and walks in the forest.
+        </p>
+
+        <p class="category">Category: men's clothing</p>
+
+        <div class="rating">⭐ 3.9 (120 reviews)</div>
+
+        <button>Add to Cart</button>
+      </div>
+      </div>
     </article>
-    <footer>
+    <!-- <footer>
         <p>&copy; 2026 E-commerce Store by Ritesh Kumar Yadav. All rights reserved.</p>   
-    </footer>
-</body>
+    </footer> -->
+  </body>
 </html>

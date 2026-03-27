@@ -44,3 +44,76 @@ nav ul li a, #appIconAndSearch a{
     border-radius: 4px;
     width: 518px;
 }
+
+#heroSection {
+    text-align: center;
+    padding: 50px;
+    background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWNvbW1lcmNlfGVufDB8fDB8fHww&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+    box-shadow: 1px 1px 5px #000000;
+    color: #fff;
+    cursor: pointer;
+}
+#heroSection h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#heroSection p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+#arrow {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.left {
+    position: relative;
+    left: 10px;
+}
+
+/* Right arrow */
+.right {
+    right: 10px;
+}
+
+#product-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+#featured-products {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.product-card img{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 237px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
