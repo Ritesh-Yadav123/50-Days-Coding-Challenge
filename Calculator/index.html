@@ -64,7 +64,11 @@
       dis = document.querySelector("#display");
 
       function press(val) {
+        if(dis.innerHTML == "0") {
+          dis.innerHTML = "";
+        }else{
         dis.innerHTML += val;
+        }
       }
       function equal() {
         dis.innerHTML = eval(dis.innerText);
