@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      #calculator {
+        border: 1px solid red;
+        width: 5in;
+        height: auto;
+        margin: 0 auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #display {
+        margin: 5px;
+        width: 90%;
+        height: 40px;
+        border: 1px solid black;
+        padding: 12px;
+      }
+      #keys {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #keys > div {
+        border: 1px solid pink;
+        height: 52px;
+        width: 73px;
+        margin: 10px;
+        text-align: center;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <h1 style="text-align: center">Simple Calculator</h1>
+      <div id="display">0</div>
+      <div id="keys">
+        <div onclick="press('+')">+</div>
+        <div onclick="press('-')">-</div>
+        <div onclick="press('*')">*</div>
+        <div onclick="press('/')">/</div>
+
+        <div onclick="press('1')">1</div>
+        <div onclick="press('2')">2</div>
+        <div onclick="press('3')">3</div>
+        <div onclick="press('4')">4</div>
+        <div onclick="press('5')">5</div>
+        <div onclick="press('6')">6</div>
+        <div onclick="press('7')">7</div>
+        <div onclick="press('8')">8</div>
+        <div onclick="press('9')">9</div>
+        <div onclick="press('0')">0</div>
+        <div id="equal" onclick="equal()">=</div>
+        <div id="clear" onclick="clearDisplay()">C</div>
+      </div>
+    </div>
+    <script>
+      
+      dis = document.querySelector("#display");
+
+      function press(val) {
+        dis.innerHTML += val;
+      }
+      function equal() {
+        dis.innerHTML = eval(dis.innerText);
+      }
+      function clearDisplay() {
+        dis.innerText = "0";
+      }
+    </script>
+  </body>
+</html>
