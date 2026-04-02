@@ -167,3 +167,17 @@ nav ul li a, #appIconAndSearch a{
     background-color: #218838;
     transform: scale(1.2);
 }
+
+footer{
+    background-color: #18090998;
+    color: #fff;
+    padding: 20px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #fff;
+}
