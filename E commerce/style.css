@@ -8,6 +8,8 @@ header{
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 li{
     list-style: none;
@@ -116,6 +118,8 @@ nav ul li a, #appIconAndSearch a{
     width: 237px;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card h3 {
@@ -142,4 +146,24 @@ nav ul li a, #appIconAndSearch a{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: auto;
+}
+
+
+#product-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;    /* ensures "..." */
+}
+
+.product-card button:hover {
+    background-color: #218838;
+    transform: scale(1.2);
 }

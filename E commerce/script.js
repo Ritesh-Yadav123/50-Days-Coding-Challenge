@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('DOMContentLoaded',()=>{
 
 const article=document.getElementById('product-grid');
 
@@ -12,7 +12,7 @@ let productCard = `
 
     <h2>${p.title}</h2>
 
-    <p class="price">$${p.price}</p>
+    <p class="price">₹${p.price}</p>
 
     <p class="desc">
         ${p.description}
