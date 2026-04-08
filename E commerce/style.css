@@ -181,3 +181,18 @@ footer li a{
     text-decoration: none;
     color: #fff;
 }
+
+
+#bag-count {
+    color: #26eb11;
+    position: relative;
+    bottom:12px;
+}
+
+#wishlist {
+    color: red;
+    background-color: yellow;
+    width: 50%;
+    margin-top: auto;   /* pushes it down */
+    align-self: center; /* centers horizontally */
+}
