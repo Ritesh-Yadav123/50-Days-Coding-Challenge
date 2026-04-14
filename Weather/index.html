@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App by Ritesh </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <p>Enter a city to get the current weather:</p>
+    <input type="text" id="cityInput" placeholder="City Name" />
+    <button id="getResult">Get Weather</button>
+    <div id="weatherResult">
+      <div id="weatherResult">
+        <h1>
+          Varanasi
+          <span>
+            <img
+              src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+              alt="Weather Icon"
+            />
+          </span>
+        </h1>
+
+        <div id="info">
+          <div><strong>Region:</strong> Uttar Pradesh</div>
+          <div><strong>Local Time:</strong> 2026-04-15 00:50</div>
+          <div><strong>Temperature:</strong> 28.7°C</div>
+          <div><strong>Feels Like:</strong> 26.6°C</div>
+          <div><strong>Condition:</strong> Clear</div>
+        </div>
+
+        <hr />
+
+        <div id="extraInfo">
+          <div><strong>Humidity:</strong> 14%</div>
+          <div><strong>Wind:</strong> 7.6 km/h (WNW)</div>
+          <div><strong>Visibility:</strong> 10 km</div>
+          <div><strong>UV Index:</strong> 0</div>
+          <div><strong>Pressure:</strong> 1003 mb</div>
+          <div><strong>Precipitation:</strong> 0 mm</div>
+          <div><strong>Gust:</strong> 15.9 km/h</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const result = document.querySelector("#getResult");
+
+      result.addEventListener("click", function () {
+        const cityName = document.querySelector("#cityInput").value;
+        getData(cityName);
+      });
+
+      async function getData(city) {
+        let URL = `https://api.weatherapi.com/v1/current.json?key=5d3abe4d78af4cb5999205657252102&q=${city}&aqi=no`;
+        let res = await fetch(URL);
+        let resData = await res.json();
+        console.log(resData);
+
+        const weatherResult = document.getElementById("weatherResult");
+        weatherResult.innerHTML = `
+<h1>
+    ${resData.location.name} 
+    <span>
+        <img src="https:${resData.current.condition.icon}" alt="Weather Icon">
+    </span>
+</h1>
+
+<div id="info">
+    <div><strong>Region:</strong> ${resData.location.region}</div>
+    <div><strong>Local Time:</strong> ${resData.location.localtime}</div>
+    <div><strong>Temperature:</strong> ${resData.current.temp_c}°C</div>
+    <div><strong>Feels Like:</strong> ${resData.current.feelslike_c}°C</div>
+    <div><strong>Condition:</strong> ${resData.current.condition.text}</div>
+</div>
+
+<hr>
+
+<div id="extraInfo">
+    <div><strong>Humidity:</strong> ${resData.current.humidity}%</div>
+    <div><strong>Wind:</strong> ${resData.current.wind_kph} km/h (${resData.current.wind_dir})</div>
+    <div><strong>Visibility:</strong> ${resData.current.vis_km} km</div>
+    <div><strong>UV Index:</strong> ${resData.current.uv}</div>
+    <div><strong>Pressure:</strong> ${resData.current.pressure_mb} mb</div>
+    <div><strong>Precipitation:</strong> ${resData.current.precip_mm} mm</div>
+    <div><strong>Gust:</strong> ${resData.current.gust_kph} km/h</div>
+</div>
+`;
+      }
+    </script>
+  </body>
+</html>
