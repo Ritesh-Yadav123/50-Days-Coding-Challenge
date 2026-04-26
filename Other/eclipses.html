@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ellipsis</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet velit dolore, corrupti, similique accusantium, temporibus at numquam fugiat tempora quisquam aut! Dignissimos alias quos labore possimus corporis corrupti unde velit?
+    Ipsum qui, quasi voluptatem deleniti earum rem, cum quas, atque omnis....<button onclick="readMore()">Read More</button> <span class="active">adipisci obcaecati! Architecto aperiam atque ut odio quisquam. Nam quidem magni maiores sit a aliquam debitis quos ipsa fugiat.
+    Harum omnis maiores ex numquam cumque tenetur esse consequatur voluptas est, necessitatibus inventore maxime! Ipsa nemo eaque rerum ratione, iusto cupiditate aut deserunt qui provident saepe quas ea eveniet! Itaque?
+    Doloribus incidunt beatae impedit quasi tempore distinctio dolore adipisci obcaecati iure! Eveniet dolorem architecto deleniti debitis nam tempore. Ab dolor eum voluptatibus ipsum atque saepe animi voluptate officia cum cupiditate?
+    Vitae expedita non accusamus, voluptas praesentium velit excepturi exercitationem reprehenderit nam temporibus, delectus amet laudantium harum. Voluptates iste alias voluptas, labore tempore ratione explicabo debitis, atque similique odio modi deleniti?
+</span></p>
+
+
+<script>
+    function readMore(){
+        span=document.getElementsByTagName('span')[0];
+        button=document.getElementsByTagName('button')[0];
+
+        span.classList.toggle('active');
+
+        if(span.classList.contains('active')){
+            button.innerText="Read More";
+        }
+        else{
+            button.innerText="Read Less";
+        }
+        
+    }
+</script>
+</body>
+</html>
