@@ -1,0 +1,109 @@
+--------------------------------------------------
+|                  NAVBAR                        |
+|  Logo/Name   Home  About  Skills  Projects Contact |
+--------------------------------------------------
+
+==================== HOME ========================
+|                                                |
+|   [ Profile Image / Illustration ]             |
+|                                                |
+|   Ritesh Kumar                                |
+|   Software Engineer                           |
+|   "Building scalable & efficient solutions"   |
+|                                                |
+|   [ View Projects ]   [ Contact Me ]           |
+|                                                |
+|   GitHub | LinkedIn | Twitter                  |
+|                                                |
+--------------------------------------------------
+
+==================== ABOUT =======================
+|                                                |
+|   👤 About Me                                  |
+|                                                |
+|   Short Intro:                                 |
+|   "I am a developer passionate about..."       |
+|                                                |
+|   Background:                                  |
+|   - Student / Developer Journey                |
+|                                                |
+|   Currently Learning:                          |
+|   - React                                     |
+|   - DSA                                       |
+|   - Backend                                   |
+|                                                |
+|   Career Goal:                                 |
+|   "To become a full-stack developer..."        |
+|                                                |
+|   Personal Traits:                             |
+|   - Problem Solver                            |
+|   - Fast Learner                              |
+|                                                |
+|   [ Download Resume ]                          |
+|                                                |
+--------------------------------------------------
+
+==================== SKILLS ======================
+|                                                |
+|   ⚡ Skills                                    |
+|                                                |
+|   🔹 Technical Skills                          |
+|   - Java | JavaScript | C                      |
+|   - HTML | CSS | React | Tailwind              |
+|   - Node.js | Express                          |
+|                                                |
+|   🔹 Tools                                     |
+|   - Git & GitHub                              |
+|   - VS Code                                   |
+|   - Postman                                   |
+|                                                |
+|   🔹 Databases                                 |
+|   - MySQL                                     |
+|   - MongoDB                                   |
+|                                                |
+|   (Optional: Progress Bars / Icons)            |
+|                                                |
+--------------------------------------------------
+
+==================== PROJECTS ====================
+|                                                |
+|   🚀 Projects                                  |
+|                                                |
+|   [ Project Card ]                             |
+|   ---------------------------                  |
+|   Title: Portfolio Website                     |
+|   Description: Short 2–3 lines                 |
+|   Tech Stack: React, Tailwind                  |
+|                                                |
+|   Features:                                    |
+|   - Responsive Design                          |
+|   - Dark Mode                                  |
+|                                                |
+|   [ GitHub ] [ Live Demo ]                     |
+|   ---------------------------                  |
+|                                                |
+|   👉 Featured Projects Section                 |
+|   👉 Mini Projects Section                     |
+|                                                |
+--------------------------------------------------
+
+==================== CONTACT =====================
+|                                                |
+|   📞 Contact Me                                |
+|                                                |
+|   Email: your@email.com                        |
+|   Phone: (optional)                            |
+|                                                |
+|   LinkedIn | GitHub                            |
+|                                                |
+|   -------- Contact Form --------               |
+|   [ Name Input ]                               |
+|   [ Email Input ]                              |
+|   [ Message Box ]                              |
+|   [ Send Button ]                              |
+|                                                |
+--------------------------------------------------
+
+==================== FOOTER ======================
+|   © 2026 Ritesh | Built with ❤️                |
+--------------------------------------------------

@@ -147,3 +147,59 @@ h1 span:hover {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
+#socialMedia {
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+#socialMedia img {
+  height: 50px;
+  width: 50px;
+}
+
+#socialMedia img:hover {
+  transform: scale(1.5) rotate(34deg);
+}
+
+#projectsBtn {
+  margin-top: 45px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(193, 15, 15);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#projectsBtn:hover {
+  background-color: rgb(18, 193, 15);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+@keyframes projectBtnAnimation {
+  from {
+    background-color: rgb(193, 15, 15);
+    box-shadow: 0 0 10px rgb(193, 15, 15);
+    transform: scale(1.8);
+  }
+}
+
+#projectsBtn {
+  animation: projectBtnAnimation 5s infinite;
+}
+
+
+#main2 button {
+  display: block;
+  height: 60px;
+  width: 50%;
+  margin: 34px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
