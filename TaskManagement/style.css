@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 2vh;
+}
+
+
+#display {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.disDiv {
+    border: 1px solid gray;
+    height: auto;
+    width: auto;
+}

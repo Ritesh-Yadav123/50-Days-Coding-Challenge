@@ -34,8 +34,8 @@
 
       <div id="nav2">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
@@ -65,11 +65,12 @@
           Pilani and working at HCLTech, where I’m gaining hands-on experience
           in real-world development environments. In my current role, I am
           working on an Acxiom Walmart project, where I...<button
-            onclick="ReadMore()"
+            onclick="ReadMore(event)"
           >
             READ MORE
           </button>
-          <span class="hidden"> handle transaction monitoring, database operations, issue
+          <span class="hidden">
+            handle transaction monitoring, database operations, issue
             resolution, server management, and banner management across multiple
             stores. This experience has given me exposure to large-scale systems
             and real-time operations. I have also completed certifications in
@@ -81,17 +82,29 @@
           </span>
         </p>
       </div>
-      <div id="hobbies">
-        <h2>Hobbies and Interests</h2>
-        <h5>
-          Apart from coding, I have a keen interest in exploring new
-          technologies, solving complex problems, and building practical
-          solutions. I enjoy participating in coding challenges and hackathons,
-          which allow me to apply my skills in competitive environments. I’m
-          also passionate about learning new programming languages and
-          frameworks to stay updated with the latest trends in software
-          development.
-        </h5>
+      <div id="HandI">
+        <div id="hobbies">
+          HOBBIES <i class="ri-arrow-drop-down-line"></i>
+          <ul>
+            
+              <li>Building web projects</li>
+              <li>Learning modern web technologies</li>
+              <li>Creating tech content</li>
+              <li>UI design practice</li>
+              <li>Solving coding challenges</li>
+            
+          </ul>
+        </div>
+        <div id="interest">
+          INTEREST <i class="ri-arrow-drop-down-line"></i>
+          <ul>
+            <li>Full Stack Development</li>
+            <li>Cloud Computing</li>
+            <li>Networking</li>
+            <li>Software Engineering</li>
+            <li>Tech Education</li>
+          </ul>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -128,16 +141,15 @@
     </footer>
     <script src="script.js"></script>
     <script>
-      const span = document.querySelector("#introduction span");
-      const btn = document.querySelector("#introduction button");
-
-      function ReadMore() {
-        span.classList.toggle("hidden");
-        if (span.classList.contains("hidden")) {
-          btn.textContent = "Read More";
-        } else {
-          btn.textContent = "Read Less";
-        }
+      const span = document.querySelector(".hidden");
+      function ReadMore(e) {
+        span.style.display = "inline";
+        span.innerHTML += `<button onclick="ReadLess(this)">Read Less</button>`;
+        e.target.remove();
+      }
+      function ReadLess(e) {
+        span.style.display = "none";
+        e.target.remove();
       }
     </script>
   </body>

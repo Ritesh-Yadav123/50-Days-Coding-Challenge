@@ -17,10 +17,28 @@ main p:hover {
     transition: color 0.3s ease;
 }
 
-main p::after{
-    content: "Click to read more";
-    display: block;
-    font-size: 0.8em;   
-    color: #888;
-    margin-top: 0.5vh;
+
+.hidden {
+    display: none;
+}
+
+#HandI {
+    height: auto;
+    margin-top: 12px auto;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content:space-around;
+}
+
+#interest ul{
+  padding: 0;
+  margin: 10px 0;
+}
+
+#interest li{
+  list-style: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }

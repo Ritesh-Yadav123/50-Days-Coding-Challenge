@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="margin: auto; width: 800px">
+      Welcome to the Task Management System
+    </h1>
+    <div id="container">
+        <div class="task">
+      <form onsubmit="taskSubmit(event)">
+        <label for="taskInput">TASK : </label>
+        <input type="text" placeholder="Enter the Title" id="taskInput" />
+        <br>
+        <label for="taskDes">Task Description : </label>
+        <textarea
+          placeholder="Enter the description for the Task"
+          id="taskDes"
+        ></textarea>
+        <br>
+        <button type="submit">Submit Task</button>
+      </form>
+      </div>
+      <div id="display">
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
