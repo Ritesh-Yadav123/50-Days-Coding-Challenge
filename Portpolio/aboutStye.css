@@ -36,9 +36,19 @@ main p:hover {
   margin: 10px 0;
 }
 
-#interest li{
-  list-style: none;
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+#interest {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .active {
+    display: none;
+} */
+
+#dropDown1, #dropDown2 {
+   display:none;
+}
+
+#dropDown1.active, #dropDown2.active {
+   display:block;
 }

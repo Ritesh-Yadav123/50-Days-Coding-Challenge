@@ -83,27 +83,28 @@
         </p>
       </div>
       <div id="HandI">
-        <div id="hobbies">
-          HOBBIES <i class="ri-arrow-drop-down-line"></i>
-          <ul>
-            
-              <li>Building web projects</li>
-              <li>Learning modern web technologies</li>
-              <li>Creating tech content</li>
-              <li>UI design practice</li>
-              <li>Solving coding challenges</li>
-            
-          </ul>
+        <div id="hobbies ">
+          HOBBIES <br /><i class="ri-arrow-drop-down-line dropDown"></i>
+          <div id="dropDown1">
+            <div class="item">Building web projects</div>
+            <div class="item">Learning modern web technologies</div>
+            <div class="item">Creating tech content</div>
+            <div class="item">UI design practice</div>
+            <div class="item">Solving coding challenges</div>
+          </div>
         </div>
+
         <div id="interest">
-          INTEREST <i class="ri-arrow-drop-down-line"></i>
-          <ul>
-            <li>Full Stack Development</li>
-            <li>Cloud Computing</li>
-            <li>Networking</li>
-            <li>Software Engineering</li>
-            <li>Tech Education</li>
-          </ul>
+          INTEREST <br />
+          <i class="ri-arrow-drop-down-line dropDown2"></i>
+
+          <div id="dropDown2">
+            <div class="item">Exploring Full Stack Development</div>
+            <div class="item">Learning Cloud Technologies</div>
+            <div class="item">Understanding Networking Concepts</div>
+            <div class="item">Improving Software Engineering Skills</div>
+            <div class="item">Following Latest Tech Trends</div>
+          </div>
         </div>
       </div>
     </main>
@@ -151,6 +152,22 @@
         span.style.display = "none";
         e.target.remove();
       }
+
+      const hobbiesMenu = document.querySelector("#dropDown1");
+      const icon = document.querySelector(".dropDown");
+
+      function dropDown() {
+        hobbiesMenu.classList.toggle("active");
+      }
+      icon.addEventListener("click", dropDown);
+
+      const hobbiesMenu2 = document.querySelector("#dropDown2");
+      const icon2 = document.querySelector(".dropDown2");
+
+       function dropDown2() {
+        hobbiesMenu2.classList.toggle("active");
+      }
+      icon2.addEventListener("click", dropDown2);
     </script>
   </body>
 </html>
