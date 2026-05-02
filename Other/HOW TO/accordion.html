@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMATED ACCORDION</title>
+    <style>
+      .accordion {
+        margin: 0 4vh;
+      }
+      .accordion > div {
+        border: 1px solid gray;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .active {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: cyan">ANIMATED ACCORDION</h1>
+
+    <div class="accordion">
+      <div class="first">
+        Section 1
+        <br />
+        <span class="item-contain" style="font-weight: lighter">
+          My Name is Ritesh Kumar Yadav
+        </span>
+      </div>
+      <div class="second">
+        Section 2
+        <br />
+        <span class="item-contain" style="font-weight: lighter">
+          I love my nephew Ritvik
+        </span>
+      </div>
+      <div class="third">
+        Section 3
+        <br />
+        <span class="item-contain" style="font-weight: lighter">
+          RitVik is only 5months old
+        </span>
+      </div>
+    </div>
+    <script>
+      // const sections=document.querySelectorAll('.accordion>div');
+      // const spans=document.querySelectorAll('.item-contain');
+
+      // function toggeling(){
+      //     for(var i=0; i<spans.length; i++){
+      //         spans[i].classList.toggle('active');
+      //     }
+      // }
+
+      // for(var i=0; i<sections.length; i++){
+      //     sections[i].addEventListener('click',toggeling);
+      // }
+
+      //REMARKS : All the sections are toggled at once, we need to toggle only the section which is clicked
+
+      // const sections=document.querySelectorAll('.accordion>div');
+
+      // function toggeling(){
+      //     this.querySelector('.item-contain').classList.toggle('active');
+      // }
+
+      // for(var i=0; i<sections.length; i++){
+      //     sections[i].addEventListener('click',toggeling);
+      // }
+
+      // Remarks : Now only the section which is clicked is toggled,
+      // but the problem is that if we click on one section and then click on another section,
+      // both the sections are open, we need to close the previous
+      //  section when we open a new section
+
+
+
+
+
+
+
+
+
+
+      const sections = document.querySelectorAll(".accordion>div");
+
+      function toggeling() {
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].querySelector(".item-contain").classList.add("active");
+        }
+          this.querySelector(".item-contain").classList.remove("active");
+
+      }
+
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].addEventListener("click", toggeling);
+      }
+
+
+    // Remark: One is always open
+
+
+    
+    </script>
+  </body>
+</html>

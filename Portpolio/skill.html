@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="skill.css" />
   </head>
   <body>
-    <nav>
+    <nav style="z-index: 1">
       <div id="nav1">
         <a href="#">
           <img src="./assets/image.png" alt="Profile Image" />
@@ -52,13 +52,53 @@
     <main style="display: block">
       <h1>Ritesh's Skill sets</h1>
       <div id="skills">
-        <div id="technical">
-          <h3>Technical Skills</h3>
+        <div
+          id="technical"
+          style="
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            padding: 20px;
+                /* background: #f8f9fa; */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 0.9;
+          "
+        >
+          <h3
+            style="
+              text-align: center;
+              color: #222;
+              font-size: 28px;
+              margin-bottom: 25px;
+              border-bottom: 3px solid #007bff;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Technical Skills
+          </h3>
 
-          <ul>
-            <li>
+          <ul style="list-style: none; padding: 0;">
+            <li
+              style="
+                background: linear-gradient(135deg, #007bff, #00c6ff);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
               Frontend
-              <ul>
+              <ul
+                style="
+                  margin-top: 10px;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                "
+              >
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -68,35 +108,102 @@
               </ul>
             </li>
 
-            <li>
+            <li
+              style="
+                background: linear-gradient(135deg, #28a745, #7cfc00);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
               Backend
-              <ul>
+              <ul
+                style="
+                  margin-top: 10px;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                "
+              >
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>REST API</li>
               </ul>
             </li>
 
-            <li>
+            <li
+              style="
+                background: linear-gradient(135deg, #6f42c1, #d633ff);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
               Database
-              <ul>
+              <ul
+                style="
+                  margin-top: 10px;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                "
+              >
                 <li>MySQL</li>
                 <li>MongoDB</li>
               </ul>
             </li>
 
-            <li>
+            <li
+              style="
+                background: linear-gradient(135deg, #fd7e14, #ffb347);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
               Programming Languages
-              <ul>
+              <ul
+                style="
+                  margin-top: 10px;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                "
+              >
                 <li>Java</li>
                 <li>JavaScript</li>
                 <li>Python</li>
               </ul>
             </li>
 
-            <li>
+            <li
+              style="
+                background: linear-gradient(135deg, #dc3545, #ff6b81);
+                color: white;
+                padding: 12px 18px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
               Tools & Platforms
-              <ul>
+              <ul
+                style="
+                  margin-top: 10px;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal;
+                "
+              >
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>VS Code</li>
@@ -105,8 +212,175 @@
             </li>
           </ul>
         </div>
-        <div id="technical"><h3>Soft Skills</h3></div>
-        <div id="technical"><h3>Current Learning</h3></div>
+        <div
+          id="softSkill"
+          style="
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            padding: 20px;
+                        /* background: #f8f9fa; */
+
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          "
+        >
+          <h3
+            style="
+              text-align: center;
+              color: #222;
+              font-size: 28px;
+              margin-bottom: 25px;
+              border-bottom: 3px solid #17a2b8;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Soft Skills
+          </h3>
+
+          <ul style="list-style: none; padding: 0">
+            <li
+              style="
+                background: linear-gradient(135deg, #17a2b8, #00d4ff);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Communication Skills
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #28a745, #7cfc00);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Teamwork & Collaboration
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #fd7e14, #ffb347);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Problem Solving
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #6f42c1, #d633ff);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Time Management
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #dc3545, #ff6b81);
+                color: white;
+                padding: 12px 18px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Quick Learning Ability
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="currentLearning"
+          style="
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            padding: 20px;
+                        /* background: #f8f9fa; */
+
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          "
+        >
+          <h3
+            style="
+              text-align: center;
+              color: #222;
+              font-size: 28px;
+              margin-bottom: 25px;
+              border-bottom: 3px solid #6610f2;
+              display: inline-block;
+              padding-bottom: 5px;
+            "
+          >
+            Current Learning
+          </h3>
+
+          <ul style="list-style: none; padding: 0">
+            <li
+              style="
+                background: linear-gradient(135deg, #007bff, #00c6ff);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Data Structures & Algorithms (DSA)
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #28a745, #7cfc00);
+                color: white;
+                padding: 12px 18px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              Artificial Intelligence & Machine Learning
+            </li>
+
+            <li
+              style="
+                background: linear-gradient(135deg, #fd7e14, #ffb347);
+                color: white;
+                padding: 12px 18px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+              "
+            >
+              React Redux & State Management
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
 
