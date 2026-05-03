@@ -1,30 +1,55 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ritesh Kumar Yadav</title>
+
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?
-      family=Google+Sans:ital,opsz,wght@0,17..18,400..
-      700;1,17..18,400..700&family=Jacques+Francois+Shadow&family=
-      Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
+
+    <style>
+      .name {
+        background: linear-gradient(
+          to right,
+          #121fcf 23%,
+          #00ff00 26%,
+          #ff1c8b 73%,
+          #cf1512 92%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .head {
+        text-shadow: -12px 8px 9px rgba(0, 0, 0, 0.52);
+        color: #3a241d;
+        font-size: clamp(28px, 5vw, 60px);
+        font-weight: lighter;
+      }
+
+      main {
+        padding: 30px 20px;
+      }
+
+      form {
+        background-color: #cf1512;
+        border: 1px solid black;
+      }
+    </style>
   </head>
+
   <body>
     <nav>
       <div id="nav1">
         <a href="#">
           <img src="./assets/image.png" alt="Profile Image" />
         </a>
+
         <span>
           Ritesh Kumar <br />
           Yadav
@@ -48,52 +73,82 @@
         <i class="ri-menu-line"></i>
       </div>
     </nav>
-   <main style="display: block">
-      <h1>Contact Me</h1>
-      <div id="contact">
-        <p>
-          I am always open to new opportunities and collaborations. If you have
-          any questions, suggestions, or just want to say hello, feel free to
-          reach out to me through the following channels:
-        </p>
+    
+    <h1 style="text-align: center">
+      <span class="head">Get In Touch with </span>
+      <span class="name">Ritesh Kumar Yadav</span>
+    </h1>
+    <main>
 
-        <ul>
-          <li>
-            <i class="ri-mail-line"></i>
-            Email: riteshyadav825410@gmail.com
-          </li>
-          <li> 
-            <i class="ri-phone-line"></i>
-            Phone: +91 9693XXXXX9<span style="color: red">Please Ask Ritesh for number via email</span>
-          </li>
-          <li>
-            <i class="ri-map-pin-line"></i>
-            Location: Lucknow, Uttar Pradesh, India
-          </li>
-        </ul>
-      </div>
+      <form>
+        <h3>Contact Us</h3>
+        <h6>We would love to hear from you</h6>
+
+        <div id="fandlName">
+          <div>
+            <label for="fName">First Name</label>
+            <input
+              type="text"
+              id="fName"
+              name="fname"
+              placeholder="Enter first name"
+            />
+          </div>
+
+          <div>
+            <label for="lName">Last Name</label>
+            <input
+              type="text"
+              id="lName"
+              name="lname"
+              placeholder="Enter last name"
+            />
+          </div>
+        </div>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Enter subject"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </main>
 
     <footer class="footer">
       <h2 class="name">Ritesh Kumar Yadav</h2>
 
       <p class="tagline">
-        Software Developer | FullStack Developer | Problem Solver | Alumin of
-        BITS, Pilani
+        Software Developer | FullStack Developer | Problem Solver | Alumni of
+        BITS Pilani
       </p>
 
       <div class="links">
-        <a href="#"> <i class="ri-github-fill"></i> GitHub </a>
-
-        <a href="#"> <i class="ri-linkedin-box-fill"></i> LinkedIn </a>
-
-        <a href="#"> <i class="ri-youtube-fill"></i> YouTube </a>
-
-        <a href="#"> <i class="ri-code-box-fill"></i> GeeksforGeeks </a>
-
-        <a href="#"> <i class="ri-code-s-slash-line"></i> LeetCode </a>
-
-        <a href="#"> <i class="ri-terminal-box-fill"></i> HackerRank </a>
+        <a href="#"><i class="ri-github-fill"></i> GitHub</a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i> LinkedIn</a>
+        <a href="#"><i class="ri-youtube-fill"></i> YouTube</a>
+        <a href="#"><i class="ri-code-box-fill"></i> GeeksforGeeks</a>
+        <a href="#"><i class="ri-code-s-slash-line"></i> LeetCode</a>
+        <a href="#"><i class="ri-terminal-box-fill"></i> HackerRank</a>
       </div>
 
       <div class="icons">
@@ -107,80 +162,4 @@
       <p class="copyright">© 2026 All Rights Reserved</p>
     </footer>
   </body>
-</html> -->
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-var subjectObject = {
-  "Front-end": {
-    "HTML": ["Links", "Images", "Tables", "Lists"],
-    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
-    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
-  },
-  "Back-end": {
-    "PHP": ["Variables", "Strings", "Arrays"],
-    "SQL": ["SELECT", "UPDATE", "DELETE"]
-  }
-}
-window.onload = function() {
-  var subjectSel = document.getElementById("subject");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
-  for (var x in subjectObject) {
-    subjectSel.options[subjectSel.options.length] = new Option(x, x);
-  }
-  subjectSel.onchange = function() {
-    //empty Chapters- and Topics- dropdowns
-    chapterSel.length = 1;
-    topicSel.length = 1;
-    //display correct values
-    for (var y in subjectObject[this.value]) {
-      topicSel.options[topicSel.options.length] = new Option(y, y);
-    }
-  }
-  topicSel.onchange = function() {
-    //empty Chapters dropdown
-    chapterSel.length = 1;
-    //display correct values
-    var z = subjectObject[subjectSel.value][this.value];
-    for (var i = 0; i < z.length; i++) {
-      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-    }
-  }
-}
-</script>
-</head>   
-<body>
-
-<h1>Cascading Dropdown Example</h1>
-
-<form name="form1" id="form1" action="/action_page.php">
-Subjects: <select name="subject" id="subject">
-    <option value="" selected="selected">Select subject</option>
-  </select>
-  <br><br>
-Topics: <select name="topic" id="topic">
-    <option value="" selected="selected">Please select subject first</option>
-  </select>
-  <br><br>
-Chapters: <select name="chapter" id="chapter">
-    <option value="" selected="selected">Please select topic first</option>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">  
-</form>
-
-</body>
 </html>

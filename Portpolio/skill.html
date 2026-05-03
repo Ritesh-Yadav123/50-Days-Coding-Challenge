@@ -416,5 +416,23 @@
 
       <p class="copyright">© 2026 All Rights Reserved</p>
     </footer>
+
+    <script>
+      const skill=document.querySelectorAll("#skills h3");
+
+      for(let i=0; i<skill.length; i++){
+        skill[i].addEventListener('click',function() {
+          this.classList.toggle("active");
+          var details=this.nextElementSibling;
+          if(details.style.display==='block'){
+            details.style.display='none';
+          }
+          else{
+            details.style.display='block';
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>
