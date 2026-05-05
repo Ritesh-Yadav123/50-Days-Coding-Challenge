@@ -36,9 +36,9 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="skill.html">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="skill.html" class="activeNav">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><i class="ri-notification-line"></i></li>
           <li><i class="ri-user-line"></i></li>
         </ul>
@@ -58,7 +58,7 @@
             font-family: Arial, sans-serif;
             max-width: 700px;
             padding: 20px;
-                /* background: #f8f9fa; */
+            /* background: #f8f9fa; */
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             z-index: 0.9;
@@ -78,7 +78,7 @@
             Technical Skills
           </h3>
 
-          <ul style="list-style: none; padding: 0;">
+          <ul style="list-style: none; padding: 0">
             <li
               style="
                 background: linear-gradient(135deg, #007bff, #00c6ff);
@@ -218,7 +218,7 @@
             font-family: Arial, sans-serif;
             max-width: 700px;
             padding: 20px;
-                        /* background: #f8f9fa; */
+            /* background: #f8f9fa; */
 
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -317,7 +317,7 @@
             font-family: Arial, sans-serif;
             max-width: 700px;
             padding: 20px;
-                        /* background: #f8f9fa; */
+            /* background: #f8f9fa; */
 
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -418,21 +418,20 @@
     </footer>
 
     <script>
-      const skill=document.querySelectorAll("#skills h3");
+      const skill = document.querySelectorAll("#skills h3");
 
-      for(let i=0; i<skill.length; i++){
-        skill[i].addEventListener('click',function() {
+      for (let i = 0; i < skill.length; i++) {
+        skill[i].addEventListener("click", function () {
           this.classList.toggle("active");
-          var details=this.nextElementSibling;
-          if(details.style.display==='block'){
-            details.style.display='none';
-          }
-          else{
-            details.style.display='block';
+          var details = this.nextElementSibling;
+          if (details.style.display === "block") {
+            details.style.display = "none";
+          } else {
+            details.style.display = "block";
           }
         });
       }
     </script>
-
+    <script src="script.js"></script>
   </body>
 </html>
