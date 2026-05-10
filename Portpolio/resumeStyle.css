@@ -63,3 +63,9 @@ main {
 #skill ul li{
   margin-top: 12px;  
 }
+
+#download {
+  position: fixed;
+  bottom: 14px;
+  left: 80vw;
+}
