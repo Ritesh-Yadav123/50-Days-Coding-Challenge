@@ -9,6 +9,60 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <style>
+            @media print {
+              /* Remove browser margins */
+              @page {
+                size: A4;
+                margin: 10mm;
+              }
+
+              body {
+                margin: 0;
+                padding: 0;
+                background: white;
+              }
+
+              /* Hide button when printing */
+              #download {
+                display: none;
+              }
+
+              main {
+                width: 100%;
+                box-shadow: none;
+                margin: 0;
+              }
+
+              /* Avoid page breaks inside sections */
+              #personal,
+              #professional,
+              .experience-item,
+              #projects,
+              #certifications {
+                break-inside: avoid;
+              }
+
+              /* Ensure colors print correctly */
+              * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+              }
+
+              img {
+                max-width: 100%;
+                height: auto;
+                margin: 10px 0;
+              }
+              @media print {
+        img {
+          display: block !important;
+          visibility: visible !important;
+          max-width: 150px;
+          height: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -171,5 +225,11 @@
         </div>
       </div>
     </main>
+    <script>
+      let dButton = document.getElementById("download");
+      dButton.addEventListener("click", function () {
+        window.print();
+      });
+    </script>
   </body>
 </html>
