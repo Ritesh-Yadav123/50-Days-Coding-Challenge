@@ -1,16 +1,60 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jacques+Francois+Shadow&family=Playwrite+AU+VIC+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Jacques Francois Shadow", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      h1::selection{
+        color: green;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello, World! Ritesh</p>
+    <h1>Hello World</h1>
+    <script>
+      document.addEventListener("click", (e) => {
+        e.target.remove();
+      });
+    </script>
+  </body>
+</html> -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script>
-        document.addEventListener('click',(e)=>{
-            e.target.remove()
-        })
-    </script>
+  <div>
+    <p>Hello, World!</p>
+  </div>
+  <div id="demo"></div>
+  <script>
+    const div=document.querySelector('div');
+
+    const att=document.createAttribute('class')
+
+    att.value='hello'
+
+    div.setAttributeNode(att);
+  </script>
 </body>
 </html>

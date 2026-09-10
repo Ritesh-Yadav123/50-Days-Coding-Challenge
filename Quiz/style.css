@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(187, 242, 242);
+}
+
+#quiz {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 0px solid black;
+    box-shadow: 2px 2px 3px gray;
+    background-color: aqua;
+    height: 4in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#quiz>*{
+    margin: auto;
+}

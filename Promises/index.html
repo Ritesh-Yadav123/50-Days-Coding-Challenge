@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <h1>learning Promises in js</h1>
+    <div id="demo"></div>
+    <script>
+      // callback: it is function which is passed as an argument to other function
+
+    //   const ele=document.querySelector('#demo');
+    //   const result=(res)=>{
+    //     ele.innerHTML=res;
+    //   }
+    
+    //   function hello(a,b,callback){
+    //     s=a+b;
+    //     callback(s)
+    //   }
+
+    //   hello(3,4,result)
+
+
+
+
+    // callback hell: it is the situation where the developer is facing issue in maintaining the code and callback
+
+    // function getData(d,callback){
+    //     setTimeout(()=>{
+    //         console.log("data is ",d)
+    //         if(callback){
+    //             callback()
+    //         }
+    //     },2000)
+    // }
+
+    // getData(1,()=>{
+    //     getData(2,()=>{
+    //         getData(3)
+    //     })
+    // })
+
+
+// reason: we can see that the function is being called in multiple order which is not easy for anyone
+
+
+// const promises=new Promise((res,rej)=>{
+//     console.log("I am a promise")
+//     // res("success")
+//     rej("error is detected")
+// })
+
+// promises.then(()=>{
+//     console.log("I am good right now ")
+// })
+
+// promises.catch(()=>{
+//     console.log("I am facing network issue")
+// })
+
+
+
+
+// function getData(d){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("I am good", d)
+//             res("Success")
+//         },2000)
+//     })
+// }
+    
+
+// getData(1).then((m)=>{
+//   console.log("Hi all", m)
+//   getData(2).then(()=>{
+//     getData(3,()=>{
+//       getData(4)
+//     })
+//   })
+// })
+
+
+
+// Async and await
+
+// async function hello(){
+//   console.log("I am Hello ")
+// }
+
+// hello()
+
+//Here promise is being called automatically without defining it anywhere
+// await is used with async function to pause the execution of aync function
+
+
+function getData(d){
+  return new Promise((res,rej)=>{
+    setTimeout(()=>{
+      console.log("data ",d)
+      res("success")
+    },2000)
+  })
+}
+
+
+async function calling(){
+  await getData(1);
+  await getData(2);
+  await getData(3);
+  await getData(4);
+}
+
+calling()
+    </script>
+
+
+
+
+
+
+// function getData(d,callback){
+//     console.log("the data is ", d)
+//     setTimeout(()=>{
+//         if(callback){
+//             callback();
+//         }
+//     },2000)
+// }
+
+
+// getData(1,()=>{
+//     getData(2)
+// })
+
+
+
+// const hello=new Promise(function(res,rej){
+//     // res("I am success Ritesh");
+//     rej("I have network issue ")
+// })
+
+// hello.then((m)=>{
+//     console.log("HI  ", m)
+// })
+
+// hello.catch((e)=>{
+//     console.log("I have error ", e)
+// })
+
+
+
+
+// function getData(d) {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             console.log("Getting Data ", d);
+//             res("success")
+//         }, 1000)
+//     })
+// }
+
+// getData(1).then(()=>{
+//     getData(2).then(()=>{
+//         getData(3)
+//     })
+// })
+
+
+
+
+
+function getData(d) {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            console.log("Getting Data ", d);
+            res("success")
+        }, 1000)
+    })
+}
+
+
+async function calling(){
+    await getData(1);
+    await getData(2);
+    await getData(3);
+}
+
+calling()
+
+  </body>
+</html>

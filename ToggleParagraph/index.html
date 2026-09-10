@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Question And Answer</title>
+    <style>
+      .ans {
+        display: none;
+      }
+      .faq{
+        border: 1px solid red;
+        padding: 12px;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq">
+      <div class="sec">
+        <h2 class="que">What is DOM</h2>
+        <p class="ans">Document Object Model</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="sec">
+        <h2 class="que">What is Noun</h2>
+        <p class="ans">Noun is the name of person place or things</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="sec">
+        <h2 class="que">What is HCL stands for</h2>
+        <p class="ans">HCL stands for Hindustan Computer Limited</p>
+      </div>
+    </div>
+    <script>
+        const faqs=document.querySelectorAll('.faq');
+
+        faqs.forEach((faq)=>{
+            faq.addEventListener('click',function(e){
+                const parent=e.target.parentElement;
+                const currentAns=parent.querySelector('.ans');
+    
+                currentAns.classList.toggle('ans');
+            })
+        })
+
+        
+    </script>
+  </body>
+</html>
